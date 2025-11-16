@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mi Sitio Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            padding: 40px 0;
+            min-height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <section id="Contacto" class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Actividades Extras</h2>
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Correo</h5>
+                            <p class="card-text">a2231080213@alumnos.uat.edu.mx.</p>
+                            <p class="card-text">eliza@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Telefono</h5>
+                            <p class="card-text">834 156 23 81.</p>
+                            <p class="card-text">01 800 300 16.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-3">
+                        <button onclick="history.back()" class="btn btn-outline-secondary"> 
+                            ← Regresar
+                        </button>
+                    </section>
+                    <footer class="bg-dark text-white text-center py-3">
+                        <p>&copy; 2025 Mi Sitio Web</p>
+                    </footer>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <script>
+                    fetch('nav.html')
+                    .then(response => response.text())
+                    .then(data => {
+                          document.getElementById('navbar-container').innerHTML = data;
+                         });
+                         </script>
+                         </body>
+                         </html>
+                        
+                         
+            

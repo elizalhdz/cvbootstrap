@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Mi Sitio Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            padding: 40px 0;
+            min-height: 90vh;
+        }
+    </style>
+</head>
+<body>
+</div>
+    <div id="navbar-container"></div>
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Mis Hobbies</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Lectura</h5>
+                    <p>Libros de ciencia ficción y tecnología</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Cocina</h5>
+                    <p>Realizacion de postres</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Deporte</h5>
+                    <p>Voleybol</p>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+                <button onclick="history.back()" class="btn btn-outline-secondary"> 
+                    ← Regresar
+                </button>
+    </section>
+<footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

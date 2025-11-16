@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        section {
+            padding: 40px 0;
+            min-height: 90vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <section id="inicio" class="bg-light">
+        <div class="container text-center">
+            <h1 class="display-4">Bienvenido a Mi Sitio</h1>
+            <p class="lead">Explora mi trayectoria profesional, actividades y hobbies.</p>
+            <div class="text-center">
+                <img src="imagen.jpg" alt="Mi foto" class="img-fluid my-4" style="max-width: 250px;">
+                <p>Hola bienvenido a mi cv aqui encontraras todo lo necesario para conocer mi perfil 
+                profesional mi educacion, habilidades, hobbies y mi contacto. 
+                Soy estudiante de la carrera de Tecnologias de la Informacion con gran 
+                entusiasmo por aprender y crecer profesionalmente. Me interesa desarrollar mis 
+                habilidades en programacion y adquirir experiencia práctica que complemente mi
+                formación académica. </p>
+</div>
+            <div class="row mt-5">
+                <div class="col-md-3">
+                    <h5>Trayectoria</h5>
+                    <p>Mi experiencia profesional y educación</p>
+                    <a href="trayectoria.html" class="btn btn-primary">Ver más</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Actividades</h5>
+                    <p>Voluntariado y proyectos personales</p>
+                    <a href="actividadesextra.html" class="btn btn-success">Ver más</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Hobbies</h5>
+                    <p>Mis pasatiempos e intereses</p>
+                    <a href="hobbies.html" class="btn btn-warning">Ver más</a>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contacto</h5>
+                    <p>Ponte en contacto conmigo</p>
+                    <a href="contacto.html" class="btn btn-info">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Cargar navbar
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+</body>
+</html>
